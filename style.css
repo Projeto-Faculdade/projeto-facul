@@ -2,7 +2,6 @@ body {
 font-family: 'Roboto', sans-serif;
 }
 
-
 .creditos {
     position: absolute;
     bottom: 0;
@@ -10,4 +9,9 @@ font-family: 'Roboto', sans-serif;
     color: black;
     padding: 10px;
     text-align: right;
+}
+
+#logo-principal {
+    width: 225px;
+    height: 225px;
 }
