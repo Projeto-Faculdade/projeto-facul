@@ -3,11 +3,26 @@ font-family: 'Roboto', sans-serif;
 }
 
 
-.creditos {
-    position: absolute;
+.contribuidor {
+    position: fixed;
     bottom: 0;
     right: 0;
-    color: black;
-    padding: 10px;
+     width: 10%; 
+     padding-right:5px;
+}
+
+.contribuidor h4{
     text-align: right;
+}
+
+.contribuidor ul {
+    text-align: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-right:4px;
+}
+
+.contribuidor li {
+    margin-bottom: 5px; 
 }
