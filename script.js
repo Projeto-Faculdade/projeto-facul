@@ -22,3 +22,24 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+    const listaDeContribuidores = document.getElementById("listaDeContribuidores");
+
+    fetch(`https://api.github.com/repos/Projeto-Faculdade/projeto-facul/contributors`)
+    .then((response) => {
+        if (!response.ok) {
+            throw new Error("Repositório não encontrado");
+        }
+        return response.json();
+    })
+    .then((contribuidores) => {
+        const contribuidoresHTML = contribuidores.map((contribuidor) => `
+            <li>${contribuidor.login}</li>
+        `).join("");
+        listaDeContribuidores.innerHTML = contribuidoresHTML;
+    })
+    .catch((error) => {
+        listaDeContribuidores.innerHTML = `<p>${error.message}</p>`;
+    });
+});
