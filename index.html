@@ -5,22 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/icone.png" type="image/x-icon">
-    <title>Agenda de atividades</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Minhas Atividades</title>
 </head>
 <body>
+    <img src="assets/logo-principal.png" alt="" id="logo-principal">
     <h1>Agenda de atividades</h1>
     <h2>P2B - 2023.2</h2>
-    <footer class="creditos">Elaborado por: <ul>
-            <li>Jerson Brito</li>
-            <li>Amanda Flores</li>
-            <li>Netto Melo</li>
-            <li>Dilberto Meira</li>
-            <li>Paulo Renan</li>
-            <li>Helison Pontes</li>
-            <li>Arthur Silva</li>
-    </footer>
+    
+    <div class="contribuidor">
+        <h4>Elaborado por:</h4>
+       <ul id="listaDeContribuidores"></ul>
+   </div>
 
-    <ul>
+    <h3>Cadastro de Atividade</h3>
+
+    <form id="formulario">
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <label for="atividade">Atividade:</label>
+        <input type="text" id="atividade" name="atividade"><br><br>
+    
+        <label for="disciplina">Disciplina:</label>
+        <input type="text" id="disciplina" name="disciplina"><br><br>
+    
+        <input type="submit" value="Enviar">
+    </form>
+
+    <ul id="dadosDoFormulario">
         <li>22/09/2023 - Estrutura de Dados - Lista de Exercício 01</li>
         <li>22/09/2023 - Estrutura de Dados - Lista de Exercício 02</li>
         <li>22/09/2023 - Estrutura de Dados - Lista de Exercício 03</li>
@@ -38,6 +54,7 @@
         <li>Sem data de entrega - Tec. Front-End - Cálculo Média com Pesos</li>
         <li>Sem data de entrega - Tec. Front-End - Cálculo Média Aritmética com Arrays</li>
     </ul>
+
     <script src="script.js"></script>
 </body>
 </html>
