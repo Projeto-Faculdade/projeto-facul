@@ -1,26 +1,32 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const formulario = document.getElementById('formulario');
-    const dadosDoFormulario = document.getElementById('dadosDoFormulario')
+document.addEventListener('DOMContentLoaded', function () {  
+    const listaTarefas = document.getElementById('lista-tarefas');
+    const tarefas = [
+        {data: '22/09/2023', disciplina: 'Estrutura de Dados', descricao: 'Lista de Exercício 01'}, 
+        {data: '22/09/2023', disciplina: 'Estrutura de Dados', descricao: 'Lista de Exercício 02'},
+        {data: '22/09/2023', disciplina: 'Estrutura de Dados', descricao: 'Lista de Exercício 03'},
+        {data: '25/09/2023', disciplina: 'Sistemas Operacionais', descricao: 'TED 02'},
+        {data: '25/09/2023', disciplina: 'Sistemas Operacionais', descricao: 'TED 03'},
+        {data: '04/10/2023', disciplina: 'Banco de Dados', descricao: 'Modelo Descritivo + Modelo ER'},
+        {data: 'Sem data de entrega', disciplina: 'Sistemas Operacionais', descricao: 'Canvas'},
+        {data: 'Sem data de entrega', disciplina: 'Banco de Dados', descricao: 'Modelo Lógico'},
+        {data: 'Sem data de entrega', ndisciplina: 'Estrutura de Dados', descricao: 'Listas Ordenada'},
+        {data: 'Sem data de entrega', disciplina: 'Linguagem de Programação I', descricao: 'Nota de Aula 1'},
+        {data: 'Sem data de entrega', disciplina: 'Linguagem de Programação I', descricao: 'Nota de Aula 2'},
+        {data: 'Sem data de entrega', disciplina: 'Linguagem de Programação I', descricao: 'Nota de Aula 3'},
+        {data: 'Sem data de entrega', disciplina: 'Tec. Front-End', descricao: 'Nivelamento em Python'},
+        {data: 'Sem data de entrega', disciplina: 'Tec. Front-End', descricao: 'Nivelamento em JavaScript'},
+        {data: 'Sem data de entrega', disciplina: 'Tec. Front-End', descricao: 'Cálculo Média com Pesos'},
+        {data: 'Sem data de entrega', disciplina: 'Tec. Front-End', descricao: 'Cálculo Média Aritmética com Arrays'},
+    ];
 
-    formulario.addEventListener('submit', function(event) {
-        event.preventDefault();
+    for (let tarefa of tarefas){
 
-        let date = document.getElementById('date').value;
-        let datePart = date.split('-');
-        let dateConverted = datePart[2] + '/' + datePart[1] + '/' + datePart[0];
-        const atividade = document.getElementById('atividade').value;
-        const disciplina = document.getElementById('disciplina').value;
-
-        const novoParagrafo = document.createElement('li');
-        novoParagrafo.textContent = `${dateConverted} - ${atividade} - ${disciplina}`;
-
-        dadosDoFormulario.appendChild(novoParagrafo);
-
-        document.getElementById('date').value = '';
-        document.getElementById('atividade').value = '';
-        document.getElementById('disciplina').value = '';
-    })
-
+        const listItem = document.createElement('li');
+        
+        listItem.innerHTML = `${tarefa.data} - ${tarefa.disciplina} - ${tarefa.descricao}`;
+        
+        listaTarefas.appendChild(listItem);
+    }
 })
 
 document.addEventListener("DOMContentLoaded", function () {
