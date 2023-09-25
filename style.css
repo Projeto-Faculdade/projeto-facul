@@ -1,182 +1,234 @@
 body {
-font-family: 'Roboto', sans-serif;
-margin: 0;
-padding: 0;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 
 .creditos {
-    position: absolute;
+  position: absolute;
 
 
-.contribuidor {
+  .contribuidor {
     position: fixed;
 
     bottom: 0;
     right: 0;
-     width: 10%; 
-     padding-right:5px;
-}
+    width: 10%;
+    padding-right: 5px;
+  }
 
-.contribuidor h4{
+  .contribuidor h4 {
     text-align: right;
-}
+  }
 
-#logo-principal {
+  #logo-principal {
     max-width: 100%;
     margin: 5px auto;
     display: block;
     text-align: center;
 
-.contribuidor ul {
-    text-align: right;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    padding-right:4px;
+    .contribuidor ul {
+      text-align: right;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      padding-right: 4px;
+    }
+
+    .contribuidor li {
+      margin-bottom: 5px;
+
+    }
+  }
 }
 
-.contribuidor li {
-    margin-bottom: 5px; 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-}}}  
+#logo-principal {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.contribuidor {
+  text-align: center;
+}
+
+ul#listaDeContribuidores {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+#formulario {
+  width: 80%;
+  text-align: center;
+  font-size: 25px;
+}
+
+#disciplina {
+  font-size: 25px;
+}
+
+#atividade {
+  font-size: 25px;
+  text-align: center;
+}
+
+#date {
+  font-size: 25px;
+}
+
+#dadosDoFormulario {
+  text-align: center;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 10px;
+  }
+
+  #formulario {
+    width: 80%;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input[type="date"],
+  input[type="text"] {
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1202px) {
+  h1 {
+    font-size: 100px;
+  }
+
+  h2 {
+    font-size: 70px;
+  }
+
+  .contribuidor {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  .container {
     padding: 20px;
   }
-  
-  #logo-principal {
-    max-width: 100%;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 70px;
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 24px;
-    text-align: center;
-  }
-  
-  .contribuidor {
-    text-align: center;
-  }
-  
-  ul#listaDeContribuidores {
-    list-style-type: none;
-    padding: 0;
-    font-size: 1.8rem;
-  }
-  
-  h3 {
-    font-size: 24px;
-    text-align: center;
-  }
-  
+
   #formulario {
     width: 80%;
     text-align: center;
-    font-size: 25px;
   }
- #disciplina{
-  font-size: 25px;
- }
- #atividade{
-  font-size: 25px;
-  text-align: center;
- }
- #date{
-  font-size: 25px;
- }
- #dadosDoFormulario{
-  text-align: center;
-  font-size: 25px;
- }
-  
-  @media screen and (max-width: 600px) {
-    h1 {
-      font-size: 24px;
-    }
-  
-    h2 {
-      font-size: 18px;
-    }
-  
-    .container {
-      padding: 10px;
-    }
-  
-    #formulario {
-      width: 80%;
-    }
-  
-    label {
-      font-size: 16px;
-    }
-  
-    input[type="date"],
-    input[type="text"] {
-      font-size: 14px;
-    }
-  
-    input[type="submit"] {
-      font-size: 16px;
-    }
+
+  #disciplina {
+    font-size: 40px;
   }
-  @media screen and (min-width: 1202px) {
-    h1 {
-      font-size: 100px;
-    }
-    h2 {
-      font-size: 70px;
-    }
-    .contribuidor{
-        font-size: 30px;
-    }
-    h3 {
-        font-size: 25px;
-    }
-  
-    .container {
-      padding: 20px;
-    }
-  
-    #formulario {
-      width: 80%;
-      text-align: center;
-    }
-   #disciplina{
+
+  #atividade {
     font-size: 40px;
-   }
-   #atividade{
-    font-size: 40px;
-   }
-   #date{
+  }
+
+  #date {
     font-size: 30px;
-   }
-   #dadosDoFormulario{
+  }
+
+  #dadosDoFormulario {
     text-align: center;
     font-size: 30px;
-   }
-   #listaDeContribuidores{
-    font-size: 2.3rem;
-   }
-  
-    label {
-      font-size: 20px;
-    }
-  
-    input[type="date"],
-    input[type="text"] {
-      font-size: 20px;
-    }
-  
-    input[type="submit"] {
-      font-size: 25px;
-    }
   }
+
+  #listaDeContribuidores {
+    font-size: 2.3rem;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  input[type="date"],
+  input[type="text"] {
+    font-size: 20px;
+  }
+
+  input[type="submit"] {
+    font-size: 25px;
+  }
+}
+
+details {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+summary {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+summary:hover {
+  background-color: #ddd;
+}
+
+ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+ul li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+#accordion {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 80%;
+}
